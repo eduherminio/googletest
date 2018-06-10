@@ -21,7 +21,9 @@ _ReSharper.Caches/
 Win32-Debug/
 Win32-Release/
 x64-Debug/
+!googletest/msvc/2010/gtest/x64-Debug
 x64-Release/
+!googletest/msvc/2010/gtest/x64-Release
 
 # Ignore autoconf / automake files
 Makefile.in
@@ -41,3 +43,9 @@ googletest/fused-src/
 
 # VS files
 .vs
+
+# Exceptions to include compiled libraries
+googletest/msvc/2010/gtest/x64-Release/*
+!googletest/msvc/2010/gtest/x64-Release/gtest.lib
+googletest/msvc/2010/gtest/x64-Debug/*
+!googletest/msvc/2010/gtest/x64-Debug/gtestd.lib
